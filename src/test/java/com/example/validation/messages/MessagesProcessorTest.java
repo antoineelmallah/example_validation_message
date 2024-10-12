@@ -56,7 +56,7 @@ class MessagesProcessorTest {
         List<Message> messages = MessagesProcessor.process(cars, ErrorGroup.class);
         assertThat(messages)
                 .isNotNull()
-                .hasSize(13)
+                .hasSize(16)
                 .allMatch(message -> MessageType.ERROR.equals(message.getType()));
     }
 
